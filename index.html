@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Tarjetas de Lealtad | Digital Innovation</title>
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600&display=swap">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+  <style>
+    body {
+      margin: 0;
+      font-family: 'Poppins', sans-serif;
+      background: linear-gradient(135deg, #80d0c7, #13547a);
+      color: #333;
+    }
+    header {
+      background: url('https://developers.google.com/static/wallet/images/loyalty-card.png') center/cover no-repeat fixed;
+      color: white;
+      padding: 4rem 2rem;
+      text-align: center;
+      position: relative;
+    }
+    header::before {
+      content: "";
+      position: absolute;
+      inset: 0;
+      background: rgba(10, 37, 64, 0.7);
+      z-index: 0;
+    }
+    header * {
+      position: relative;
+      z-index: 1;
+    }
+    header img {
+      max-width: 160px;
+      margin-bottom: 1rem;
+    }
+    h1 {
+      font-size: 2.5rem;
+      margin: 0.5rem 0;
+    }
+    h2 {
+      text-align: center;
+      margin-bottom: 2rem;
+      color: #0a2540;
+    }
+    .section {
+      padding: 3rem 1.5rem;
+      max-width: 1100px;
+      margin: auto;
+    }
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      gap: 2rem;
+    }
+    .card {
+      background: white;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      transition: transform 0.3s ease;
+    }
+    .card:hover {
+      transform: translateY(-5px);
+    }
+    .card img {
+      width: 60px;
+      height: 60px;
+      object-fit: contain;
+      margin-bottom: 1rem;
+    }
+    .cta {
+      text-align: center;
+      margin: 3rem 0;
+    }
+    .card-button {
+      display: inline-block;
+      width: 50px;
+      height: 50px;
+      font-size: 1.5rem;
+      background: #25: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+      text-align: center;
+      line-height: 50px;
+      text-decoration: none;
+      transition: transform 0.2s ease;
+    }
+    .card-button:hover {
+      transform: scale(1.1);
+    }
+    footer {
+      text-align: center;
+      padding: 2rem;
+      font-size: 0.9rem;
+      color: #fff;
+    }
+    form input, form textarea {
+      width: 100%;
+      padding: 0.7rem;
+      border-radius: 8px;
+      border: 1px solid #ccc;
+      margin-bottom: 1rem;
+      font-family: 'Poppins', sans-serif;
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <img src="https://digitalinnovation.agency/wp-content/uploads/2023/10/logo-digital-innovation-blanco.png" alt="Digital Innovation Logo" />
+  <h1>Tarjetas de Lealtad Digitales</h1>
+  <p>Transforma la experiencia de tus clientes con soluciones modernas y rentables</p>
+</header>
+
+<section class="section">
+  <h2>¿Qué ofrecemos?</h2>
+  <div class="grid">
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040230.png" alt="Diseño personalizado">
+      <h3>Diseño Personalizado</h3>
+      <p>Tarjetas digitales con tu logo, colores y estilo. Cada tarjeta refleja la identidad de tu marca.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040256.png" alt="Integración Wallet">
+      <h3>Integración con Wallet</h3>
+      <p>Compatible con Google Wallet y Apple Wallet. Tus clientes pueden guardar su tarjeta en el móvil fácilmente.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040245.png" alt="Automatización">
+      <h3>Automatización</h3>
+      <p>Conectamos tu sistema de ventas o CRM para actualizar puntos y recompensas automáticamente.</p>
+    </div>
+    <div class="card">
+      <img src="https://cdn-icons-png.flaticon.com/512/1040/1040262.png" alt="Análisis de datos">
+      <h3>Datos y Métricas</h3>
+      <p>Obtén reportes sobre uso, recompensas y comportamiento de tus clientes para tomar mejores decisiones.</p>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Casos de Uso</h2>
+  <div class="grid">
+    <div class="card">☕ Cafeterías que premian visitas frecuentes</div>
+    <div class="card">🛍️ Tiendas que ofrecen descuentos por puntos</div>
+    <div class="card">✈️ Agencias de viaje con membresías exclusivas</div>
+    <div class="card">🏋️‍♂️ Gimnasios que recompensan la constancia</div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>¿Cómo lo hacemos?</h2>
+  <div class="card">
+    <p><strong>1. Diseño:</strong> Creamos una tarjeta digital con tu logo, colores y beneficios.</p>
+    <p><strong>2. Configuración:</strong> Registramos tu tarjeta en Google Wallet y Apple Wallet.</p>
+    <p><strong>3. Integración:</strong> Conectamos tu sistema de ventas o CRM para que los puntos se actualicen automáticamente. No necesitas conocimientos técnicos, nosotros lo hacemos todo.</p>
+    <p><strong>4. Activación:</strong> Tus clientes reciben un enlace para guardar su tarjeta en el móvil. ¡Listo para usar!</p>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Lo que dicen nuestros clientes</h2>
+  <div class="grid">
+    <div class="card">
+      <p>"Gracias a las tarjetas digitales, aumentamos la lealtad en un 40%."</p>
+      <p>⭐⭐⭐⭐⭐</p>
+      <small>- Café Central</small>
+    </div>
+    <div class="card">
+      <p>"Integración sencilla y gran soporte del equipo técnico."</p>
+      <p>⭐⭐⭐⭐⭐</p>
+      <small>- Boutique Luna</small>
+    </div>
+  </div>
+</section>
+
+<section class="section">
+  <h2>Contáctanos</h2>
+  <div class="card">
+    <form action="mailto:info@digitalinnovation.agency" method="post" enctype="text/plain">
+      <label>Nombre:<br><input type="text" name="nombre" required></label><br>
+      <label>Email:<br><input type="email" name="email" required></label><br>
+      <label>Mensaje:<br><textarea name="mensaje" rows="4" required></textarea></label><br>
+      <input type="submit" value="Enviar" style="background:#0a2540; color:white; border:none; padding:0.5rem 1rem; border-radius:8px;">
+    </form>
+  </div>
+</section>
+
+<div class="cta">
+  <a href="https://wa.me/13463661414?text=Hola%20Digital%20Innovation,%20quiero%20más%20información%20sobre%20las%20tarjetas%20de%20lealtad" title="Contáctanos por WhatsApp" class="card-button">💳</a>
+</div>
+
+<footer>
+  © 2025 Digital Innovation · <a href="mailto:info@digitalinnovation.agency">info@digitalinnovation.agency</a>
+</footer>
+
+<script>
+  gsap.from("header h1", { y: -50, opacity: 0, duration: 1 });
+  gsap.from(".card", {
+    opacity: 0,
+    y: 30,
+    duration:[43dcd9a7-70db-4a1f-b0ae-981daa162054](https://github.com/karames/curso-markdown-master/tree/9a65a17dd637e2be8fee24d6ea6c5558403d5487/markdown%2F100-codigo-fuente.md?citationMarker=43dcd9a7-70db-4a1f-b0ae-981daa162054 "1")
